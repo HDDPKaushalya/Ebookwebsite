@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sfdisplaypro !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+@font-face {
+    font-family: sfdisplaypro;
+    src: url("Components/fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+/*Custom Scroll Bar*/
+html::-webkit-scrollbar {
+    width: 0.6rem;
+    background: aliceblue;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgba(74, 74, 74, 0.688);
+}
+
+.align_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #240b36, #c31432);
+    padding-right: 10px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    /*border: 1px solid black;*/
+    margin: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    transition-duration: 2s;
+}
+
+.logo img:hover {
+    transform: rotateZ(360deg);
+}
+
+.form_container {
+    background: rgb(102, 102, 102);
+    background: linear-gradient(to right, #232526fc, #414345fc);
+    border: 1px solid black;
+    width: 96%;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.navtitle {
+    /*border: 1px solid black;*/
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navtitle h1 {
+    color: aliceblue;
+    opacity: 0.9;
+    font-size: 32px;
+}
+
+.navbutton {
+    /*border: 1px solid black;*/
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbutton button {
+    font-size: 14px;
+}
+
+#backToCart {
+    padding: 3px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    border: 2px outset black;
+    cursor: pointer;
+}
+
+.order_container {
+    /*border: 1px solid black;*/
+    display: flex;
+}
+
+.contact_container, .name_container, .mobile_container, .shipaddr_container, .zip_container, 
+.country_container, .card_num_container, .cvc_container, .promocode_container {
+    /*border: 1px solid white;*/
+    width: 100%;
+}
+
+.contact_container, .address_container  {
+    /*border: 1px solid white;*/
+    width: 100%;
+    display: block;
+}
+
+.name_container input {
+    width: 79%;
+    margin-left: 32px;
+}
+
+.mobile_container input {
+    margin-left: 1px;
+}
+
+.shipaddr_container input {
+    width: 76.2%;
+    
+}
+
+.zip_container input {
+    margin-left: 60px;
+    width: 76.2%;
+}
+
+.country_container select {
+    margin-left: 68px;
+    width: 76.2%;
+}
+
+.card_num_container input{
+    width: 76.2%;
+    margin-left: 24px;
+}
+
+.cvc_container input {
+    width: 76.2%;
+    margin-left: 82px;
+}
+
+.promocode_container input {
+    width: 76.2%;
+}
+
+input {
+    padding-left: 3px;
+    margin-left: 5px;
+}
+
+.effect:focus {
+    outline: 1pt double cyan;
+    box-shadow: 0 2px 5px 1px cyan;
+    transition: 0.1s;
+}
+
+form label, input, select {
+    margin-top: 8px;
+}
+
+input, select {
+    color: rgb(13, 12, 12);
+    font-size: 15px;
+    outline: none;
+    
+}
+
+form label {
+    margin-left: 15px;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.order_details {
+    border: 1px solid aliceblue;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    flex: 1;
+    display: block;
+    margin-right: 10px;
+}
+
+.border_effect:hover {
+    outline: 2pt double cyan;
+    box-shadow: 0px 0px 1px 3px cyan;
+    transition: 0.2s;
+}
+
+h2 {
+    color: aliceblue;
+    margin-top: 28px;
+    font-size: 24px;
+}
+
+h4 {
+    color: aliceblue;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.card img {
+    margin: 5px;
+}
+
+.order_preview {
+    border: 1px solid aliceblue;
+    padding-left: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.itemtable {
+    border: 1px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+table {
+    width: 80%;
+}
+
+table, th, td {
+    border: 1px solid rgb(102, 102, 102);;
+    text-align: center;
+}
+
+th, td {
+    height: 30px;
+}
+
+th {
+    background-color: #cccccc;
+    font-size: 16px;
+}
+
+td {
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+.orderSummary {
+    display: flex;
+    width: 25%;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.summaryLabels {
+    flex: 1;
+    text-align: left;
+}
+
+.summaryValues {
+    flex: 1;
+    text-align: right;
+}
+
+.orderSummary span {
+    margin: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+a {
+    color: aliceblue;
+}
+
+.deliveryTime {
+    background: linear-gradient(45deg, lightseagreen, blue );
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+    color: aliceblue;
+}
+
+.deliveryTime span {
+    font-size: 22px;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.supportButtons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.supportButtons a {
+    text-decoration: none;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    margin-right: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(68, 68, 68);
+    font-size: 16px;
+}
+
+.orderButtons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+#cancelOrder, #placeOrder {
+    margin-right: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#cancelOrder {
+    background-color: red;
+}
+
+#placeOrder {
+    background: linear-gradient(45deg, yellowgreen, green );
+}
+
+
+

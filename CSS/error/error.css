@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(26, 26, 150);
+
+}
+div{
+    padding-top: 10%;
+}
+.container {
+    
+    width: 90%;
+    margin: auto;
+    max-width: 840px;
+    
+    padding-bottom: 10%;
+    background-color: black;
+    font-family: "Courier New", monospace;
+  }
+  
+ .title {
+    margin-bottom: 50px; 
+    text-align: center;
+    color: blue;
+    
+    }
+
+.bg {
+    
+    background: rgb(241, 0, 0);
+    padding: 0 15px 2px 13px;
+      }
+#p1{
+    font-family: "Courier New", monospace;
+    color: rgb(179, 176, 176);
+} 
+ul{
+    list-style-type: none;
+    font-family: "Courier New", monospace;
+    color: aliceblue;
+}
+ul li::before{
+    content: "*";
+    margin-right: 1;
+}
+li{
+    text-align: left;
+}
+
+    

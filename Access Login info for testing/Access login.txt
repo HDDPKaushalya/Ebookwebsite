@@ -1,0 +1,18 @@
+user01
+=======
+user name-> admin    admin666
+name-> admin
+email-> admin@admin.com
+Address-> No 6, 666 road, admin
+contact-> 666 666 666
+password-> admin666
+
+
+user02
+=======
+user name-> user    user666
+name-> user
+email-> user@user.com
+Address-> No 6, 666 road, user
+contact-> 666 666 666
+password-> user6666

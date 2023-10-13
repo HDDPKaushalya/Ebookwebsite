@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    background-image:url(../../images/1x/Artboard\ 1.png);
+    background-repeat: no-repeat; 
+    
+  }
+  
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.452);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.452);
+  }
+
+  h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .button:hover {
+    background-color: #d81d1d;
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .care {
+    margin-top: 50px;
+  }
+
+  .privacy {
+    margin-top: 50px;
+    text-align: justify;
+  }
+
+  .privacy h2 {
+    color: #000000;
+  }
+
+  .privacy p {
+    color: #000000;
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="Components/CSS/signup/Signup v1.css" >
+    <link rel="stylesheet" type="text/css" href="Components/Bootstrap/css/bootstrap.min.css" >
+    <script type="text/javascript" src="Components/Bootstrap/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    
+    <!--js-->
+    <script src="Components/JS/Signup.js"></script>
+
+    <title>Sign up</title>
+</head>
+<body style = "background-image: url('Components/images/15442036_5592750.jpg')">
+    <!--Upper border-->
+    <!--
+    <video autoplay muted loop id="myVideo">
+        <source src="Components/videos/pexels-oleg-gamulinskii-2611250-3840x2160-30fps.mp4" type="video/mp4">
+      </video>
+    -->
+    <!--<div class="ubod1">
+    
+    </div>
+    -->
+    
+   
+    
+    <!-- Login area -->
+    <div class="SA1">
+        <br><br>
+        <a href = "index.php"><img id="loginimg" src="Components/images/recreate 1.3.png"></a>
+        <p id="topic">Sign Up</p>
+        <br>
+        
+        <div class="SA2">
+    
+            
+            
+            <form id="Sform" action = "signupS.php" method="post">
+                
+                <div class="form-check">
+                    <label id="labels" for="user_name">User Name</label><br>
+                    <input type="text" class="area" id="usname" name="user_name" onkeyup="validateUSname()"><br>
+                    <span style="color:pink;" id = "userro"></span><br>
+                </div>
+
+                <div class="form-check">
+                    <label id="labels" for="name">Name</label><br>
+                    <input type="text" class="area" id="name" name="name" onkeyup="validateName()"><br>
+                    <span  style="color:pink;" id="nameerro"></span><br>
+                </div>
+                
+                <div class="form-check">
+                    <label id="labels" for="email">Email</label><br>
+                    <input type="email" class="area" id="Email" name="email" onkeyup="validateEmail()"><br>
+                    <span  style="color:pink;" id="emailerro"></span><br>
+                </div>
+                
+                <div class="form-check">
+                    <label id="labels" for="address">Address</label><br>
+                    <input type="text" class="area" id="Address" name="address" onkeyup="validateAddress()"><br>
+                    <span  style="color:pink;" id="addresserro"></span><br>
+                </div>
+
+                <div class="form-check">
+                    <label id="labels" for="contact_no">Contact Number</label><br>
+                    <input type="text" class="area" id="ContNo" name="contact_no" onkeyup = "validateContactNo()"><br>
+                    <span  style="color:pink;" id="contacterro"></span><br>
+                </div>
+
+                <div class="form-check">
+                    <label id="labels" for="password">Password</label><br>
+                    <input type="password" class="area" id="Password" name="password"  onkeyup="validatePass()"><br>
+                    <span  style="color:pink;" id="passerro"></span><br>
+                </div>
+
+                <div class="form-check">
+                    <label id="labels" for="confirm_password">Confirm Password</label><br>
+                    <input type="password" class="area" id="cPassword" name="confirm_password" onkeyup="validatecPass()"><br>
+                    <span  style="color:pink;" id="cpasserro"></span><br><br>    
+                </div>
+                
+
+                
+                
+                <button type="reset" class="btn btn-outline-secondary" id="btns" >Reset</button>
+                <a href = "index.php?page=Loginpage v1"><button type="button" class="btn btn-outline-secondary" id="btns">Cancel</button></a>
+                <button class="btn btn-primary btn-s" id="btnsc">Submit</button>
+            </form> 
+        </div>
+    
+    
+    
+        <!--Lower border-->
+        <div class="Lbod1">
+            
+    </div>
+
+    </body>
+</html>
+
+
+

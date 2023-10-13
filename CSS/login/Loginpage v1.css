@@ -1,0 +1,186 @@
+
+
+body{
+  background-image: url("Components/images/15442036_5592750.png");
+  background-color: rgba(94, 88, 88, 0.178);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  
+}
+
+
+.container {
+position: relative;
+}
+
+
+
+.ubod1{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  
+  padding-top: 1.5vh;
+  padding-bottom: 2.7vh;
+
+  background-color: rgb(255, 0, 0);
+  animation: ubod1-color-change 10s linear infinite;
+
+}
+@keyframes ubod1-color-change {
+0% {
+  background-color: #791714;
+}
+50% {
+  background-color: rgb(220,20,60)
+}
+100% {
+  background-color: #791714;
+}
+}
+
+
+
+
+.Lbod1{
+  position: fixed;
+  bottom:0px;
+  right: 0px;
+  left: 0%;
+
+  padding-top: 1.7vh;
+  padding-bottom: 2.7vh;
+
+  background-color: rgb(255, 0, 0);
+  animation: ubod1-color-change 10s linear infinite;
+
+}
+
+
+.LA1{
+  overflow: hidden;
+  
+  
+  position: absolute;
+  
+  padding-top: 5%;
+  padding-bottom: 20%;
+  padding-block-end: 600px;
+  top: 100px;
+  right: 30%;
+  left: 30%;
+  bottom:30px;
+
+  height: 100%;
+  background: rgba(179, 167, 167, 0.048);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 0px solid rgba(255, 255, 255, 0.164);
+  text-align: center;
+  
+  
+}
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+#loginimg{
+  animation-name: spinning;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+animation-timing-function: linear;
+  max-width:20%;
+  
+  
+}
+
+
+
+#Loginform{
+  display: inline-block;
+ 
+  font-size: 1.2vw;
+
+  
+  width: 90%;
+  
+}
+
+
+#user_name{
+margin: auto;
+  background-color: #55535325;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid #ff0000;
+  padding: 15px;
+  width: 23vw;
+  height: 1vw;
+ 
+}
+
+#password{
+  margin: auto;
+  background-color: #55535325;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid #ff0000;
+  padding: 15px;
+  width: 23vw;
+  height: 1vw;
+}
+
+
+#sub, #signup{
+  background-color: #55535325;
+  color: aliceblue;
+  width: 70%;
+  max-width: 70%;
+  margin: 10px;
+  border-radius: 10px;
+  
+  display: inline-block;
+  
+  text-transform: uppercase;
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+              inset 0 -2px 0 1px rgba(255, 255, 255, 0.1),
+              0 2px 2px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to bottom, 55535325, rgba(0, 0, 0, 0.1));
+}
+
+#sub:hover {
+  background: #333;
+  color: rgb(255, 0, 0);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.555);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+}
+
+
+#signup:hover {
+background: #333;
+  color: rgb(255, 0, 0);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.555);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+
+}
+.area{
+color: aliceblue;
+}
+
+
+label{
+color: white;
+}
+
+#lab1{
+color: #f3a6a6;
+}
